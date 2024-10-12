@@ -52,7 +52,7 @@ Created a simple form with sign up and login function and validation.
 
 1. Clone the repository
    ```sh
-    git clone https://github.com/shental17/IE4727.git
+    git clone https://github.com/shental17/IE4727-Exercises.git
    ```
 2. Navigate to the project directory
    ```sh
