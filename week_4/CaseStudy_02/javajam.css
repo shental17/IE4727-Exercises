@@ -1,0 +1,171 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #cfb38c;
+  min-width: 800px;
+  margin: 0;
+}
+header {
+  background-color: #cfb38c;
+  padding: 10px;
+  background-image: url("assets/javaJam.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+header h1 {
+  font-family: "spicy rice";
+  color: #3e2723;
+}
+/*Main Content Box*/
+#wrapper {
+  background-color: #f5f5dd;
+  display: flex;
+}
+#leftcolumn {
+  width: 150px;
+  background-color: #e1d1b3;
+  padding: 10px;
+  box-sizing: border-box;
+}
+nav ul {
+  list-style-type: none;
+  padding-top: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #2f0508;
+  font-weight: bold;
+}
+
+nav a.active {
+  color: #9f8a6d;
+}
+#rightcolumn {
+  flex: 1; /* This allows the right column to take up the remaining space */
+  background-color: #f5f5dd;
+  color: #000000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  padding: 0px 20px;
+}
+.content h2 {
+  color: #2f0508;
+  font-family: arial, sans-serif;
+}
+/*index.html*/
+.flexContainer {
+  display: flex;
+}
+.flexContainer > img {
+  width: 300px;
+  height: auto;
+}
+.flexContainer > .flexRight {
+  flex: 1;
+  box-sizing: border-box;
+  margin: 0px 20px;
+}
+.content ul {
+  list-style-image: url(assets/coffeeCup.png);
+  background-size: 10px 10px;
+  margin: 0px;
+}
+.flexRight > .address {
+  padding-left: 10px;
+}
+/*menu.html*/
+#menu {
+  display: flex;
+  justify-content: center;
+}
+#menu dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+  width: fit-content;
+  margin: auto;
+}
+#menu dt,
+#menu dd {
+  padding: 10px;
+}
+
+#menu dt:nth-child(1),
+#menu dd:nth-child(2),
+#menu dt:nth-child(5),
+#menu dd:nth-child(6) {
+  background-color: #cfb38c;
+}
+
+#menu dt {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#menu dd {
+  grid-column: 2;
+  margin-left: 0;
+}
+
+#menu dd span,
+#music span {
+  font-weight: bold;
+}
+
+/*music.html*/
+
+#music {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+#music th,
+#music td {
+  padding: 10px;
+  text-align: left;
+}
+
+#music th {
+  background-color: #e1d1b3;
+}
+
+#music img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#music audio {
+  width: 100%;
+}
+
+form label {
+  display: block;
+  text-align: right;
+  padding-right: 20px;
+}
+form input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+}
+form td {
+  padding: 10px 0px;
+  vertical-align: top;
+}
+
+footer {
+  font-size: 70%;
+  text-align: center;
+  padding: 20px;
+  background-color: #cfb38c;
+}

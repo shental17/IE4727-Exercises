@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../javajam.css" />
+  </head>
+  <body>
+    <header></header>
+    <div id="wrapper">
+      <div id="leftcolumn">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="jobs.html" class="active">Jobs</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="rightcolumn">
+        <div class="content">
+          <h2>Jobs at JavaJam</h2>
+          <p>
+            Want to work at JavaJam? Fill out the form below to start your
+            application. Required fields are marked with asterick *
+          </p>
+          <form action="show_get.php" method="GET">
+            <table>
+              <tr>
+                <td><label for="name">*Name:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name here"
+                    id="name"
+                    required="1"
+                  />
+                  <p id="nameError" class="errors"></p>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">*E-mail:</label></td>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your Email-ID here"
+                    id="email"
+                    required="1"
+                  />
+                  <p id="emailError" class="errors"></p>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="startDate">Start Date:</label></td>
+                <td>
+                  <input type="date" name="startDate" id="startDate" />
+                  <p id="startDateError" class="errors"></p>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="experience">*Experience:</label></td>
+                <td>
+                  <textarea
+                    name="experience"
+                    placeholder="Enter your past experience here"
+                    id="experience"
+                    rows="10"
+                    cols="50"
+                    required="1"
+                  ></textarea>
+                  <p id="experienceError" class="errors"></p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="reset" value="Clear" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="submit" id="submitButton" value="Apply Now" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <small
+        ><i>
+          Copyright &copy; 2014 JavaJam Coffee House
+          <br />
+          <a href="mailto:shental@ang.com">shental@ang.com</a>
+        </i></small
+      >
+    </footer>
+    <script src="../js/jobValidation.js"></script>
+  </body>
+</html>
