@@ -159,7 +159,7 @@ nav a.active {
 
 form label {
   display: block;
-  text-align: right;
+  text-align: left;
   padding-right: 20px;
 }
 form input[type="text"],
@@ -171,6 +171,7 @@ form td {
   padding: 10px 0px;
   vertical-align: top;
 }
+
 .errors {
   color: red;
 }
@@ -181,6 +182,16 @@ form td {
 .disabled {
   background-color: grey;
   color: white;
+}
+
+.btn-custom-primary {
+  color: #3e2723; /* Custom text color */
+  border-color: #3e2723;
+}
+
+.btn-custom-primary.active {
+  background-color: #3e2723; /* Darker background for the active state */
+  border-color: #3e2723; /* Matching border color */
 }
 
 footer {
